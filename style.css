@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.video-wrapper {
+  width: 690px;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+  width: 98%;
+  background: inherit;
+  z-index: 1000;
+}
+
+.controls--top {
+  width: 100%;
+}
+
+.progress {
+  width: 100%;
+}
+
+.controls--bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 15px;
+}
+
+.fullScreen {
+  position: absolute;
+  right: 5px;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    cursor: pointer;
+}
+
+.speed-control {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 2px 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: auto; 
+    margin-right: 40px; 
+}
+
+.speed-control option {
+    background: #222;
+    color: white;
+}
+
+
